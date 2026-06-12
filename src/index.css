@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #0a0a14;
+  --color-brand-surface-dim: #0c0b18;
+  --color-brand-surface-bright: rgba(255, 255, 255, 0.12);
+  --color-brand-surface-lowest: rgba(10, 10, 20, 0.65);
+  --color-brand-surface-low: rgba(255, 255, 255, 0.03);
+  --color-brand-surface-container: rgba(255, 255, 255, 0.05);
+  --color-brand-surface-high: rgba(255, 255, 255, 0.08);
+  --color-brand-surface-highest: rgba(255, 255, 255, 0.15);
+  
+  --color-brand-primary: #3b82f6;
+  --color-brand-on-primary: #ffffff;
+  --color-brand-primary-container: rgba(59, 130, 246, 0.18);
+  --color-brand-on-primary-container: #dbeafe;
+  
+  --color-brand-secondary: #c084fc;
+  --color-brand-on-secondary: #1e1b4b;
+  --color-brand-secondary-container: rgba(192, 132, 252, 0.18);
+  
+  --color-brand-text: #f1f5f9;
+  --color-brand-text-dim: #cbd5e1;
+  --color-brand-text-slate: #94a3b8;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@utility font-tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+@utility glass-panel {
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+@utility glass-panel-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.18);
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+@utility bg-inset-input {
+  background-color: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #f1f5f9;
+  &:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
+  }
+}
+
+/* Custom glow borders and soft drop-shadows */
+@utility glow-teal {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.25);
+}
+
+@utility glow-indigo {
+  box-shadow: 0 0 20px rgba(192, 132, 252, 0.25);
+}
+
+/* Base custom definitions */
+body {
+  background-color: #0a0a14;
+  color: #f1f5f9;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Slim Scrollbars for professional code logs and panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #010f1f;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c2b3c;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #273647;
+}

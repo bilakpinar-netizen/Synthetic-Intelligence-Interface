@@ -1,0 +1,6 @@
+{
+  "name": "Synthetic Intelligence Interface",
+  "description": "High-performance AI data engineering client for live stream simulations, real-time token telemetry analytics, hyperparameter tuning, and model execution powered by Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
